@@ -4,7 +4,7 @@
 
 ## 运行方法：
 
-0. 在命令行里执行 `git clone -b openchat2 https://github.com/yi03/openchat`
+0. 在命令行里执行 `git clone https://github.com/yi03/openchat2`
 1. 修改 `config.env` 文件，填入自己的 `API_KEY`
 2. 在命令行里执行 `pip install -r requirements.txt`
 3. 运行 `chat.py`
