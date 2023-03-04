@@ -5,7 +5,7 @@ export const name = 'openchat2'
 
 const logger = new Logger(name)
 
-export const usage = "[自建后端转发服务](https://github.com/yi03/openchat/tree/openchat2)，目前尚未存在手把手教程，有基本的 python 使用经验一般可以较为轻松的搭建。"
+export const usage = "需要 [自建](https://github.com/yi03/openchat2) 后端转发服务，目前尚未存在手把手教程，有基本的 python 使用经验一般可以较为轻松的搭建。"
 
 export interface Config {
   botname: string
@@ -53,7 +53,8 @@ export function apply(ctx: Context, config: Config) {
     if (res) return res.data['message']
     throw new Error()
   }
-  const cmd = ctx.command(`设定 <设定bot的人格:text>`)
+  const cmd1 = ctx.command(`openchat2`)
+  const cmd2 = ctx.command(`设定 <设定bot的人格:text>`)
     .alias('set')
     .action(async ({ session }, input) => {
       if (!input?.trim()) return session.execute(`help ${name}`)
@@ -64,7 +65,7 @@ export function apply(ctx: Context, config: Config) {
       }
       catch { return session.text('.network-error') }
     })
-  const cmd2 = ctx.command(`重置`)
+  const cmd3 = ctx.command(`重置`)
     .alias('reset')
     .action(async ({ session }, input) => {
       try {
