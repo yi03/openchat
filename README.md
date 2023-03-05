@@ -1,4 +1,6 @@
-# 建议使用我新写的[openai-api](https://github.com/yi03/koishi-plugin-openai-api)插件，功能和openchat2插件一模一样，并且不用自建后端
+# 建议使用我新写的[openai-api](https://github.com/yi03/koishi-plugin-openai-api)插件，功能和openchat2插件一模一样，并且不用自建后端。
+
+# 不要同时启用openai-api和openchat2插件，这两个插件有冲突。不出意外的话之后可以不用openchat2了。
 
 
 ## openchat2后端
