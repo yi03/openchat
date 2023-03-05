@@ -1,7 +1,7 @@
 tsconfig.tsbuildinfo
 yarn-error.log
-lib/*
-node_modules/*
+lib/
+node_modules/
 yarn.lock
 .config.env
 memory/
